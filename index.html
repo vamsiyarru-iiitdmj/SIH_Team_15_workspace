@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kisan Setu — Smart Crop Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">Kisan Setu</a>
+    <nav class="nav__links">
+      <a href="#problem">The Gap</a>
+      <a href="#solution">Platform</a>
+      <a href="#cycle">Crop Calendar</a>
+      <a href="#team">Team</a>
+    </nav>
+    <a href="#cta" class="nav__cta">Vote Up</a>
+  </div>
+</header>
+
+<!-- ===== MANDI TICKER ===== -->
+<div class="ticker" aria-label="live mandi prices">
+  <div class="ticker__track">
+    <span>WHEAT · Indore Mandi · ₹2,340/qtl <em>▲ 1.2%</em></span>
+    <span>SOYBEAN · Ujjain Mandi · ₹4,610/qtl <em>▼ 0.6%</em></span>
+    <span>COTTON · Khargone Mandi · ₹7,120/qtl <em>▲ 2.1%</em></span>
+    <span>ONION · Indore Mandi · ₹1,480/qtl <em>▼ 3.4%</em></span>
+    <span>GRAM · Dewas Mandi · ₹5,050/qtl <em>▲ 0.4%</em></span>
+    <!-- duplicate set for seamless loop -->
+    <span>WHEAT · Indore Mandi · ₹2,340/qtl <em>▲ 1.2%</em></span>
+    <span>SOYBEAN · Ujjain Mandi · ₹4,610/qtl <em>▼ 0.6%</em></span>
+    <span>COTTON · Khargone Mandi · ₹7,120/qtl <em>▲ 2.1%</em></span>
+    <span>ONION · Indore Mandi · ₹1,480/qtl <em>▼ 3.4%</em></span>
+    <span>GRAM · Dewas Mandi · ₹5,050/qtl <em>▲ 0.4%</em></span>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero__text">
+    <p class="eyebrow">Smart India Hackathon · AgriTech</p>
+    <h1>Every field<br>has a story.<br><span class="hero__accent">We help you read it.</span></h1>
+    <p class="hero__sub">Kisan Setu turns soil sensors, satellite imagery and mandi data into one plain-language advisory — sown in the farmer's own language, harvested from real-time science.</p>
+    <div class="hero__actions">
+      <a href="#cta" class="btn btn--primary">See it in action</a>
+      <a href="#solution" class="btn btn--ghost">How it works</a>
+    </div>
+    <dl class="hero__stats">
+      <div><dt>12</dt><dd>states piloted</dd></div>
+      <div><dt>40k+</dt><dd>farmers advised</dd></div>
+      <div><dt>18%</dt><dd>avg. input savings</dd></div>
+    </dl>
+  </div>
+  <div class="hero__art" aria-hidden="true">
+    <svg viewBox="0 0 420 420" class="field-diagram">
+      <circle cx="210" cy="210" r="180" class="ring ring--outer"/>
+      <circle cx="210" cy="210" r="130" class="ring ring--mid"/>
+      <circle cx="210" cy="210" r="80" class="ring ring--inner"/>
+      <g class="field-diagram__rows">
+        <line x1="60" y1="120" x2="360" y2="120"/>
+        <line x1="45" y1="180" x2="375" y2="180"/>
+        <line x1="45" y1="240" x2="375" y2="240"/>
+        <line x1="60" y1="300" x2="360" y2="300"/>
+      </g>
+      <circle cx="210" cy="210" r="10" class="field-diagram__core"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section class="problem" id="problem">
+  <p class="eyebrow eyebrow--dark">The gap on the ground</p>
+  <div class="problem__grid">
+    <article>
+      <h3>Advisory arrives too late</h3>
+      <p>By the time a pest alert reaches a village, the window to act has often closed.</p>
+    </article>
+    <article>
+      <h3>Data stays in silos</h3>
+      <p>Soil health cards, weather feeds and mandi prices live in separate systems no farmer has time to cross-check.</p>
+    </article>
+    <article>
+      <h3>One-size advice doesn't fit</h3>
+      <p>A 2-acre plot in Malwa and a 20-acre plot in Punjab need different answers to the same question.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== SOLUTION ===== -->
+<section class="solution" id="solution">
+  <p class="eyebrow">The platform</p>
+  <h2>One field. One number to call.</h2>
+  <div class="solution__grid">
+    <div class="feature">
+      <span class="feature__mark">Soil</span>
+      <h4>Sensor + card fusion</h4>
+      <p>Combines IoT soil-moisture readings with government soil health cards to recommend exact fertiliser dosage.</p>
+    </div>
+    <div class="feature">
+      <span class="feature__mark">Sky</span>
+      <h4>Satellite crop stress map</h4>
+      <p>Weekly NDVI imagery flags stressed patches before they're visible to the eye.</p>
+    </div>
+    <div class="feature">
+      <span class="feature__mark">Voice</span>
+      <h4>IVR &amp; WhatsApp advisory</h4>
+      <p>No app required — advisories are read aloud in the farmer's dialect over a missed-call callback.</p>
+    </div>
+    <div class="feature">
+      <span class="feature__mark">Mandi</span>
+      <h4>Sell-time prediction</h4>
+      <p>Forecasts a 7-day price window across nearby mandis so farmers time the harvest sale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CROP CALENDAR WHEEL ===== -->
+<section class="cycle" id="cycle">
+  <p class="eyebrow">Built around the season, not the sprint</p>
+  <h2>The crop calendar wheel</h2>
+  <div class="cycle__wrap">
+    <svg viewBox="0 0 500 500" class="wheel" role="img" aria-label="Kharif, Rabi and Zaid crop season wheel">
+      <circle cx="250" cy="250" r="210" class="wheel__base"/>
+      <path d="M250,250 L250,40 A210,210 0 0,1 432,340 Z" class="wheel__seg wheel__seg--kharif"/>
+      <path d="M250,250 L432,340 A210,210 0 0,1 68,340 Z" class="wheel__seg wheel__seg--rabi"/>
+      <path d="M250,250 L68,340 A210,210 0 0,1 250,40 Z" class="wheel__seg wheel__seg--zaid"/>
+      <circle cx="250" cy="250" r="95" class="wheel__hub"/>
+      <text x="250" y="242" class="wheel__hub-text">Advisory</text>
+      <text x="250" y="266" class="wheel__hub-text wheel__hub-text--sub">engine</text>
+    </svg>
+    <ul class="cycle__legend">
+      <li><span class="dot dot--kharif"></span><strong>Kharif</strong> · Jun–Oct · rice, cotton, soybean — sown with the monsoon.</li>
+      <li><span class="dot dot--rabi"></span><strong>Rabi</strong> · Oct–Mar · wheat, gram, mustard — sown at monsoon's retreat.</li>
+      <li><span class="dot dot--zaid"></span><strong>Zaid</strong> · Mar–Jun · watermelon, cucumber — the short summer catch-crop.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="team" id="team">
+  <p class="eyebrow eyebrow--dark">Team Bhoomi</p>
+  <h2>Four disciplines, one field</h2>
+  <div class="team__grid">
+    <div class="member"><h4>Aarav Mehta</h4><span>ML &amp; Remote Sensing</span></div>
+    <div class="member"><h4>Priya Nair</h4><span>Backend &amp; IVR Systems</span></div>
+    <div class="member"><h4>Rohan Deshmukh</h4><span>Agronomy Research</span></div>
+    <div class="member"><h4>Sana Sheikh</h4><span>Product &amp; UX</span></div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="cta">
+  <h2>Ready to walk the field with us?</h2>
+  <p>Let's together build something great for a greater nation.</p>
+  <a href="mailto:team@kisansetu.in" class="btn btn--primary btn--lg">Vote Up</a>
+</section>
+
+<footer class="footer">
+  <span>Kisan Setu — Smart India Hackathon 2026</span>
+  <span>Built for Problem Statement: Smart Agriculture Advisory</span>
+</footer>
+
+</body>
+</html>
